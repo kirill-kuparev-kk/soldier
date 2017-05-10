@@ -1,0 +1,52 @@
+
+#home .Skip{
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #D8D8D8;
+  color: #000;
+  border-radius: 3px;
+  margin-top: 1rem;
+  font-family: GarageProbook, sans-serif;
+  width: 22%;
+  height: 2.2rem;
+}
+
+#home .fz,#home .ustavi,#home .prikazi,#home .dd,#home .bp,#home .ap{
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#home .fz{
+    background-image: url("../img/main11.png");
+}
+#home .ustavi{
+    background-image: url("../img/Ustavi.png");
+}
+
+#home .prikazi{
+    background-image: url("../img/Prikazi.png");
+}
+#home .dd{
+    background-image: url("../img/documenti.png");
+}
+#home .bp{
+    background-image: url("../img/BP.jpg");
+}
+
+#home .ap{
+    background-image: url("../img/Prazdniki.jpg");
+}
+#home .textMenu{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+}

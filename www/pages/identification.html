@@ -1,0 +1,99 @@
+<ion-view id="home"
+          title="Home"
+          hide-back-button="true">
+
+
+  <ion-content class="BG fadein" scroll="true" has-bouncing="false">
+        <div style="margin-top: 30px" class="lend">
+            <div class="row">
+                <div class="col-20"></div>
+                <div class="fz " ng-click="$state.go('federlzakon')"></div>
+                <div class="col-5"></div>
+                <div class="prikazi" ng-click="$state.go('prikaz')"></div>
+                <div class="col-5"></div>
+                <div class="ustavi " ng-click="$state.go('ustav')"></div>
+                <div class="col-20"></div>
+            </div>
+            <div class="row">
+                <div class="col-20"></div>
+                <div class="textMenu"> Федеральные законы</div>
+                <div class="col-5"></div>
+                <div class="textMenu"> Приказы МО РФ</div>
+                <div class="col-5"></div>
+                <div class="textMenu">Уставы ВС РФ</div>
+                <div class="col-20"></div>
+            </div>
+            <div class="row">
+                <div class="col-20"></div>
+                <div class="dd" ng-click="$state.go('dopdoc')"></div>
+                <div class="col-5"></div>
+                <div class="bp" ng-click="$state.go('boevpodgotovka')"></div>
+                <div class="col-5"></div>
+                <div class="ap" ng-click="$state.go('armprazdnik')"></div>
+                <div class="col-20"></div>
+            </div>
+            <div class="row">
+                <div class="col-20"></div>
+                <div class="textMenu">Другие документы</div>
+                <div class="col-5"></div>
+                <div class="textMenu"> Боевая подготовка</div>
+                <div class="col-5"></div>
+                <div class="textMenu">Армейские праздники</div>
+                <div class="col-20"></div>
+            </div>
+
+        </div>
+
+      <div style="margin-top: 50px " class="port">
+          <div class="row" style="margin: auto">
+              <div class="col-10"></div>
+              <div class="fz " ng-click="$state.go('federlzakon')"></div>
+              <div class="col-10"></div>
+              <div class="ustavi " ng-click="$state.go('ustav')"></div>
+              <div class="col-10"></div>
+          </div>
+          <div class="row" style="margin: auto">
+              <div class="col-10"></div>
+              <div class="textMenu"> Федеральные законы</div>
+              <div class="col-10"></div>
+              <div class="textMenu">Уставы ВС РФ</div>
+              <div class="col-10"></div>
+          </div>
+          <div class="row" style="margin: auto">
+              <div class="col-10"></div>
+              <div class="prikazi" ng-click="$state.go('prikaz')"></div>
+              <div class="col-10"></div>
+              <div class="dd" ng-click="$state.go('dopdoc')"></div>
+              <div class="col-10"></div>
+          </div>
+          <div class="row" style="margin: auto">
+              <div class="col-10"></div>
+              <div class="textMenu"> Приказы МО РФ</div>
+              <div class="col-10"></div>
+              <div class="textMenu">Другие документы</div>
+              <div class="col-10"></div>
+          </div>
+          <div class="row" style="margin: auto">
+              <div class="col-10"></div>
+              <div class="bp" ng-click="$state.go('boevpodgotovka')"></div>
+              <div class="col-10"></div>
+              <div class="ap" ng-click="$state.go('armprazdnik')"></div>
+              <div class="col-10"></div>
+          </div>
+          <div class="row" style="margin: auto">
+              <div class="col-10"></div>
+              <div class="textMenu"> Боевая подготовка</div>
+              <div class="col-10"></div>
+              <div class="textMenu">Армейские праздники</div>
+              <div class="col-10"></div>
+          </div>
+
+      </div>
+
+
+
+
+      <div class="clear-row" ng-if="hasScroll" style="clear: both; display: block; height: 19rem;"></div>
+
+  </ion-content>
+</ion-view>
