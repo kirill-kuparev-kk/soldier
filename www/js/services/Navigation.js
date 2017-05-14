@@ -1,4 +1,4 @@
-ProFiberAppServices.service('Navigation', function ($rootScope, $state) {
+SolderGuideServices.service('Navigation', function ($rootScope, $state) {
   //directly binding events to this context
   this.goNative = function (to, params, options, direction) {
     $state.transitionTo(to, params, angular.extend({inherit: true, relative: $state.$current}, options));

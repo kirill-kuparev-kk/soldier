@@ -1,4 +1,4 @@
-var SolderGuide = angular.module('ProFiberApp', [
+var SolderGuide = angular.module('SolderGuide', [
   'ionic',
   'ngCordova',
   'ngResource',
@@ -14,12 +14,12 @@ var SolderGuide = angular.module('ProFiberApp', [
 ]);
 
 
-var ProFiberAppControllers = angular.module('profiber.controllers', []);
-var ProFiberAppDirectives  = angular.module('profiber.directives', []);
-var ProFiberAppFilters     = angular.module('profiber.filters', []);
-var ProFiberAppServices    = angular.module('profiber.services', []);
-var ProFiberAppFactories   = angular.module('profiber.factories', []);
-var ProFiberAppResources   = ProFiberAppFactories; // this is factories too
+var SolderGuideControllers = angular.module('profiber.controllers', []);
+var SolderGuideDirectives  = angular.module('profiber.directives', []);
+var SolderGuideFilters     = angular.module('profiber.filters', []);
+var SolderGuideServices    = angular.module('profiber.services', []);
+var SolderGuideFactories   = angular.module('profiber.factories', []);
+var SolderGuidepResources   = SolderGuideFilters; // this is factories too
 
 
 var ENV = 'development';
