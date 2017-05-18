@@ -11,6 +11,8 @@
     "angular-resource": "~1.4.8",
     "angular-svg-round-progressbar": "~0.3.10",
     "angularjs-slider": "~2.8.0",
-    "jquery": "^2.2.2"
+    "jquery": "^2.2.2",
+    "ionic-datepicker": "^1.2.1",
+    "angular-momentjs": "^0.2.2"
   }
 }

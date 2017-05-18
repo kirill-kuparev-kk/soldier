@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<ion-view id="fz1"
+          title="Home"
+          hide-back-button="false">
+    <div class="bar bar-header bar-positive" >
+        <h1 class="title">ДМБ таймер</h1>
+    </div>
 
-</body>
-</html>
+    <ion-content  scroll="true" has-bouncing="false" class="BG_DMBtimer fadein">
+        <progress id="progressbar" max="100" value="{{ progressval }}"> </progress>
+        <div id="progressbarlabel">{{ progressval }} %</div>
+        Прошло
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{hourDate}} часа</div>
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{dayDate}} дня</div>
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{weekDate}} недели</div>
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{monthDate}} месяца</div>
+        Осталось
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{hourDateRem}} часа</div>
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{dayDateRem}} дня</div>
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{weekDateRem}} недели</div>
+        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{monthDateRem}} месяца</div>
+        <div class="button-bar" style="margin-top: 50px">
+            <a class="button">Месяцев</a>
+            <a class="button">Недель</a>
+            <a class="button">Дней</a>
+            <a class="button">Часов</a>
+        </div>
+    </ion-content>
+</ion-view>

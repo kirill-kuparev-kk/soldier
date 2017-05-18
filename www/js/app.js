@@ -10,7 +10,9 @@ var SolderGuide = angular.module('SolderGuide', [
   'profiber.factories',
   'profiber.filters',
   'profiber.directives',
-  'rzModule'
+  'rzModule',
+  'ionic-datepicker',
+  'angular-momentjs'
 ]);
 
 
@@ -33,7 +35,8 @@ SolderGuide.constant('$ionicLoadingConfig', {
 
 
 SolderGuide
-  .run(['$rootScope', '$ionicPlatform', '$state', '$timeout', '$ionicPopup', '$ionicLoading', '$ionicHistory', '$cordovaSplashscreen','Navigation', runMethod]);
+  .run(['$rootScope', '$ionicPlatform', '$state', '$timeout', '$ionicPopup', '$ionicLoading', '$ionicHistory', '$cordovaSplashscreen','Navigation', runMethod])
+
 
 
 function runMethod($rootScope, $ionicPlatform, $state, $timeout, $ionicPopup, $ionicLoading, $ionicHistory, $cordovaSplashscreen, Navigation) {
