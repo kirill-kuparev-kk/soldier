@@ -49,7 +49,22 @@ function routes($stateProvider, $urlRouterProvider) {
       .state('dopdoc', dopdoc)
       .state('DMBTimer', DMBTimer)
       .state('boevpodgotovka', boevpodgotovka)
-      .state('disciplinarniy_ustav', disciplinarniy_ustav);
+      .state('disciplinarniy_ustav', disciplinarniy_ustav)
+
+
+
+
+      .state('stroevoy_ustav', stroevoy_ustav)
+      .state('stroevoy_ustav_chap1', stroevoy_ustav_chap1)
+      .state('ustav_voennoy_policii', ustav_voennoy_policii)
+      .state('ustav_voennoy_policii_chap1', ustav_voennoy_policii_chap1)
+      .state('ustav_voennoy_policii_chap2', ustav_voennoy_policii_chap2);
+
+
+
+
+
+
 
 
     $urlRouterProvider.otherwise('/');
@@ -289,16 +304,44 @@ var DMBTimer = {
 var ustavi = {
   url: '/ustavi',
   cache: false,
-  templateUrl: 'pages/ustavi.html'
+  templateUrl: 'pages/ustavi/ustavi.html'
 };
 
 var disciplinarniy_ustav = {
   url: '/disciplinarniy_ustav',
   cache: false,
-  templateUrl: 'pages/disciplinarniy_ustav/disciplinarniy_ustav.html'
+  templateUrl: 'pages/ustavi/disciplinarniy_ustav/disciplinarniy_ustav.html'
+};
+
+var stroevoy_ustav = {
+  url: '/stroevoy_ustav',
+  cache: false,
+  templateUrl: 'pages/ustavi/stroevoy_ustav/stroevoy_ustav.html'
+};
+
+var stroevoy_ustav_chap1 = {
+  url: '/stroevoy_ustav_chap1',
+  cache: false,
+  templateUrl: 'pages/ustavi/stroevoy_ustav/chapter1.html'
+};
+var ustav_voennoy_policii = {
+    url: '/ustav_voennoy_policii',
+    cache: false,
+    templateUrl:'pages/ustavi/ustav_voennoy_policii/usav_voennoy_policii.html'
+};
+
+var ustav_voennoy_policii_chap1 = {
+    url: '/ustav_voennoy_policii_chap1',
+    cache: false,
+    templateUrl:'pages/ustavi/ustav_voennoy_policii/chapter1.html'
 };
 
 
+var ustav_voennoy_policii_chap2 = {
+    url: '/ustav_voennoy_policii_chap2',
+    cache: false,
+    templateUrl:'pages/ustavi/ustav_voennoy_policii/chapter2.html'
+};
 
 
 var prikaz = {
