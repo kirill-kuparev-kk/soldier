@@ -4,6 +4,7 @@ SolderGuide.config(['$stateProvider', '$urlRouterProvider', routes]);
 function routes($stateProvider, $urlRouterProvider) {
   $stateProvider
       .state('menu', menu)
+      .state('notepad', notepad)
       .state('federlzakon', federlzakon)
       .state('o_statuse_voennosluzhashego', o_statuse_voennosluzhashego)
       .state('o_statuse_voennosluzhashego_chap1', o_statuse_voennosluzhashego_chap1)
@@ -77,6 +78,12 @@ function routes($stateProvider, $urlRouterProvider) {
 var menu = {
   url: '/',
   templateUrl: 'pages/identification.html',
+  cache: false
+};
+
+var notepad = {
+  url: '/notepad',
+  templateUrl: 'pages/notepad.html',
   cache: false
 };
 

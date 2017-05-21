@@ -7,17 +7,26 @@
 
     <ion-content  scroll="true" has-bouncing="false" class="BG_DMBtimer fadein">
         <progress id="progressbar" max="100" value="{{ progressval }}"> </progress>
-        <div id="progressbarlabel">{{ progressval }} %</div>
-        Прошло
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{hourDate}} часа</div>
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{dayDate}} дня</div>
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{weekDate}} недели</div>
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{monthDate}} месяца</div>
-        Осталось
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{hourDateRem}} часа</div>
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{dayDateRem}} дня</div>
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{weekDateRem}} недели</div>
-        <div style="font-size:14px;font-weight: 600;width:50%;margin-left: 25%">{{monthDateRem}} месяца</div>
+        <div id="progressbarlabel" style="width: 20%;margin-left: 40%;margin-top:20px;margin-bottom: 20px">
+            <p style="font-weight: 900;font-size: 20px">{{ progressval }} %</p>
+        </div>
+
+        <div class="row" style="background-color: white;padding: 20px 10px">
+            <div class="col col-50"  >
+                <p style="font-size: 14px;font-weight: 600">Прошло</p>
+                <div style="font-size:14px;font-weight: 600">{{hourDate}} часа</div>
+                <div style="font-size:14px;font-weight: 600">{{dayDate}} дня</div>
+                <div style="font-size:14px;font-weight: 600">{{weekDate}} недели</div>
+                <div style="font-size:14px;font-weight: 600">{{monthDate}} месяца</div>
+            </div>
+            <div class="col col-50">
+                <p style="font-size: 14px;font-weight: 600">Осталось</p>
+                <div style="font-size:14px;font-weight: 600">{{hourDateRem}} часа</div>
+                <div style="font-size:14px;font-weight: 600">{{dayDateRem}} дня</div>
+                <div style="font-size:14px;font-weight: 600">{{weekDateRem}} недели</div>
+                <div style="font-size:14px;font-weight: 600">{{monthDateRem}} месяца</div>
+            </div>
+        </div>
         <div class="button-bar" style="margin-top: 50px">
             <a class="button">Месяцев</a>
             <a class="button">Недель</a>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="37" id="com.foxymoron.profiber" ios-CFBundleVersion="37" version="1.03" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>PROFIBER</name>
+<widget android-versionCode="37"  ios-CFBundleVersion="37" version="1.03" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Soldier</name>
     <description />
     <author email="" href="dunice">
     Dunice
