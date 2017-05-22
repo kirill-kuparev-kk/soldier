@@ -8,7 +8,7 @@ function fzCtrl($rootScope, $scope) {
         var word=$scope.searchWord;
        if(word){
         $(document).ready(function(){
-            $("#Test").html(function(_, html){
+            $("#text").html(function(_, html){
                 return html.replace(new RegExp(word, 'g'), '<span class="red">'+word+'</span>');
             });
 

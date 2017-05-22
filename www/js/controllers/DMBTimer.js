@@ -28,7 +28,7 @@ function timerCtrl($rootScope, $scope,$moment,ionicDatePicker, $interval) {
 
                 return;
             }
-        }, 100);
+        }, 5000);
     }
 
     startprogress();

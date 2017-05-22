@@ -1,18 +1,24 @@
-<h1 class="header">AngularJS Markdown Notes</h1>
-<div >
-    <div ng-controller="notepadCtrl">
+<div class="bar bar-header">
+    <h1 class="title">Заметки военнослужащего</h1>
+    <span class="icons" style="z-index: 1000;margin-top: -10px">
+            <i class="fa fa-plus-circle fa-4x" ng-click="addNote()" ></i>
+    </span>
+</div>
 
-    <span class="icons">
-    <i class="fa fa-plus-circle fa-2x" ng-click="addNote()"></i>
-      </span>
-        <div class="note" ng-repeat="note in notes | orderBy:'createdOn':true track by $index">
-            <span class="date">{{note.createdOn | date:"EEEE dd MMMM, yyyy 'at' h:mma"}}</span>
-            <span class="icons">
-      <i class="fa fa-check fa-lg" ng-if="note.edit == false"></i>
-      <i class="fa fa-pencil fa-lg" ng-if="note.edit == true"></i>
-      <i class="fa fa-trash-o fa-lg" ng-click="delete(notes.length - $index - 1)"></i></span>
+<ion-content  scroll="true" >
+    <div  style="margin-top: 100px">
+        <div >
 
-            <div class="markdown-body" ng-model="note.text" ng-change="update(notes.length - $index - 1,note.text)" ng-focus="note.edit = true" ng-blur="note.edit = false" markdown-editable contenteditable="true">{{ note.text }}</div>
+
+            <div class="note" ng-repeat="note in notes | orderBy:'createdOn':true track by $index">
+                <span class="date">{{note.createdOn | date:"EEEE dd MMMM, yyyy 'at' h:mma"}}</span>
+                <span class="icons">
+          <i class="fa fa-check fa-lg" ng-if="note.edit == false"></i>
+          <i class="fa fa-pencil fa-lg" ng-if="note.edit == true"></i>
+          <i class="fa fa-trash-o fa-lg" ng-click="delete(notes.length -$index-1)"></i></span>
+
+                <div class="markdown-body" ng-model="note.text" ng-change="update(notes.length - $index - 1,note.text)" ng-focus="note.edit = true" ng-blur="note.edit = false" markdown-editable contenteditable="true">{{ note.text }}</div>
+            </div>
         </div>
     </div>
-</div>
+</ion-content>

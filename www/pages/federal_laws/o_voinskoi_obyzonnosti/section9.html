@@ -7,17 +7,17 @@
     <div class="bar bar-header item-input-inset" style="margin-top: 44px">
         <label class="item-input-wrapper">
             <i class="icon ion-ios-search placeholder-icon"></i>
-            <input type="search" placeholder="Search" ng-model="search">
+            <input type="search" placeholder="Search" ng-model="searchWord">
         </label>
-        <button class="button button-clear">
-            Cancel
+        <button class="button button-clear" ng-click="searcher()">
+            Искать
         </button>
     </div>
 
 
     <ion-content class="BG1 fadein" scroll="true" >
 
-        <div style="padding: 20px 20px;color: #000000;font-size: 12px;margin-top: 100px">
+        <div style="padding: 20px 20px;color: #000000;font-size: 12px;margin-top: 100px" id="text">
             Статья 58. Действие ранее принятых нормативных правовых актов
 
             Нормативные правовые акты, принятые Главным командованием Объединенных Вооруженных Сил Содружества Независимых Государств до образования Вооруженных Сил Российской Федерации, Главным командованием пограничных войск Содружества Независимых Государств до образования Пограничных войск Российской Федерации по вопросам, регулируемым настоящим Федеральным законом, сохраняют свою силу в части, не противоречащей настоящему Федеральному закону.
