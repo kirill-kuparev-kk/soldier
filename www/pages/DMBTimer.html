@@ -1,13 +1,14 @@
 <ion-view id="fz1"
-          title="Home"
           hide-back-button="false">
     <div class="bar bar-header bar-positive" >
+        <span style="z-index: 100" ng-click="$state.go('menu')"><img src="../img/back_arrow.png" style="    width: 30px;"></span>
         <h1 class="title">ДМБ таймер</h1>
+        <span style="z-index: 100 ;right: 0;margin-right: 5px;position: absolute" ng-click="openDatePicker()"><img src="../img/setting.png" style="    width: 30px;"></span>
     </div>
 
     <ion-content  scroll="true" has-bouncing="false" class="BG_DMBtimer fadein">
         <progress id="progressbar" max="100" value="{{ progressval }}"> </progress>
-        <div id="progressbarlabel" style="width: 20%;margin-left: 40%;margin-top:20px;margin-bottom: 20px">
+        <div id="progressbarlabel" style="width: 30%;margin-left: 35%;margin-top: 20px; margin-bottom: 20px;">
             <p style="font-weight: 900;font-size: 40px">{{ progressval }} %</p>
         </div>
 

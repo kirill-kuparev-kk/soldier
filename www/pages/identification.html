@@ -16,96 +16,29 @@
             <ion-nav-view name="menuContent">
                 <ion-content class="BG fadein" scroll="true" has-bouncing="false">
 
-
-
-                    <!--<div style="margin-top: 30px" class="lend">-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-20"></div>-->
-                            <!--<div class="fz " ng-click="$state.go('federlzakon')"></div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="prikazi" ng-click="$state.go('prikaz')"></div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="ustavi " ng-click="$state.go('ustavi')"></div>-->
-                            <!--<div class="col-20"></div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-20"></div>-->
-                            <!--<div class="textMenu"> Федеральные законы</div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="textMenu"> Приказы МО РФ</div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="textMenu">Уставы ВС РФ</div>-->
-                            <!--<div class="col-20"></div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-20"></div>-->
-                            <!--<div class="dd" ng-click="$state.go('dopdoc')"></div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="bp" ng-click="$state.go('boevpodgotovka')"></div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="ap" ng-click="$state.go('armprazdnik')"></div>-->
-                            <!--<div class="col-20"></div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-20"></div>-->
-                            <!--<div class="textMenu">Другие документы</div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="textMenu"> Боевая подготовка</div>-->
-                            <!--<div class="col-5"></div>-->
-                            <!--<div class="textMenu">Армейские праздники</div>-->
-                            <!--<div class="col-20"></div>-->
-                        <!--</div>-->
-
-                    <!--</div>-->
-<!---->
                     <div style="margin-top: 50px " class="port">
                         <div class="row" style="margin: auto">
-                            <div class="col-10"></div>
                             <div class="fz " ng-click="$state.go('federlzakon')"></div>
-                            <div class="col-10"></div>
+                            <div class="textMenu" ng-click="$state.go('federlzakon')"> Федеральные законы</div>
+                        </div>
+                        <div class="row" style="margin: auto">
                             <div class="ustavi " ng-click="$state.go('ustavi')"></div>
-                            <div class="col-10"></div>
+                            <div class="textMenu" ng-click="$state.go('ustavi')">Уставы ВС РФ</div>
                         </div>
                         <div class="row" style="margin: auto">
-                            <div class="col-10"></div>
-                            <div class="textMenu"> Федеральные законы</div>
-                            <div class="col-10"></div>
-                            <div class="textMenu">Уставы ВС РФ</div>
-                            <div class="col-10"></div>
-                        </div>
-                        <div class="row" style="margin: auto">
-                            <div class="col-10"></div>
                             <div class="prikazi" ng-click="$state.go('prikaz')"></div>
-                            <div class="col-10"></div>
+                            <div class="textMenu" ng-click="$state.go('prikaz')"> Приказы МО РФ</div>
+                        </div>
+                        <div class="row" style="margin: auto">
                             <div class="dd" ng-click="$state.go('dopdoc')"></div>
-                            <div class="col-10"></div>
+                            <div class="textMenu" ng-click="$state.go('dopdoc')">Другие документы</div>
                         </div>
                         <div class="row" style="margin: auto">
-                            <div class="col-10"></div>
-                            <div class="textMenu"> Приказы МО РФ</div>
-                            <div class="col-10"></div>
-                            <div class="textMenu">Другие документы</div>
-                            <div class="col-10"></div>
-                        </div>
-                        <div class="row" style="margin: auto">
-                            <div class="col-10"></div>
-                            <div class="bp" ng-click="$state.go('boevpodgotovka')"></div>
-                            <div class="col-10"></div>
-                            <div class="ap" ng-click="$state.go('prazdniki')"></div>
-                            <div class="col-10"></div>
-                        </div>
-                        <div class="row" style="margin: auto">
-                            <div class="col-10"></div>
-                            <div class="textMenu"> Боевая подготовка</div>
-                            <div class="col-10"></div>
-                            <div class="textMenu">Армейские праздники</div>
-                            <div class="col-10"></div>
+                            <div class="ap" style="margin-top: 30px" ng-click="$state.go('prazdniki')"></div>
+                            <div class="textMenu"  ng-click="$state.go('prazdniki')">Армейские праздники</div>
                         </div>
 
                     </div>
-
-
-
 
                     <div class="clear-row" ng-if="hasScroll" style="clear: both; display: block; height: 19rem;"></div>
 
@@ -119,16 +52,13 @@
             </ion-header-bar>
             <ion-content style="background-image: url(../img/bgButton.jpg)">
                 <ion-list>
-                    <ion-item menu-close ng-click="$state.go('DMBTimer')">
+                    <ion-item menu-close ng-click="$state.go('DMBTimer')" class="menu-button">
                         ДМБ таймер
                     </ion-item>
-                    <ion-item menu-close ng-click="$state.go('notepad')">
+                    <ion-item menu-close ng-click="$state.go('notepad')" class="menu-button">
                         Заметки
                     </ion-item>
-                    <ion-item menu-close href="#/app/browse">
-                        Настройки
-                    </ion-item>
-                    <ion-item menu-close href="#/app/playlists">
+                    <ion-item menu-close ng-click="$state.go('about')" class="menu-button">
                         О программе
                     </ion-item>
                 </ion-list>

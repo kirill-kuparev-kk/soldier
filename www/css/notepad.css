@@ -53,7 +53,7 @@ div[contenteditable]:focus{
     top:0;
     left:0;
     padding:15px;
-    font-size:0.7em;
+    font-size:1.3em;
     font-style: italic;
     color:#71CBD0;
 }

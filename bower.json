@@ -13,6 +13,12 @@
     "angularjs-slider": "~2.8.0",
     "jquery": "^2.2.2",
     "ionic-datepicker": "^1.2.1",
-    "angular-momentjs": "^0.2.2"
+    "angular-momentjs": "^0.2.2",
+    "Angular-Markdown-Editor": "angular-markdown-editor#*",
+    "font-awesome": "^4.7.0",
+    "bootstrap-markdown": "^2.10.0",
+    "marked": "^0.3.6",
+    "angular-marked": "^1.2.2",
+    "angular-highlightjs": "^0.7.1"
   }
 }

@@ -42,11 +42,33 @@
 }
 
 #home .ap{
-    background-image: url("../img/Prazdniki.jpg");
+    background-image: url("../img/prazdniki.png");
 }
 #home .textMenu{
     color: white;
     font-size: 17px;
     text-align: center;
     margin: auto;
+}
+
+.menu-button{
+    background-color: #387ef5;
+    border-color: #0c63ee;
+    color: white;
+}
+
+.fa-plus-circle {
+    color: white!important;
+}
+
+.bar .title {
+    margin: 0 43px!important;
+}
+
+.popup-container .popup {
+    width: 285px;
+}
+.date_selection{
+    margin-left: 25px;
+    margin-right: 22px;
 }
