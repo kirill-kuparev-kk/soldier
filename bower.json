@@ -19,6 +19,7 @@
     "bootstrap-markdown": "^2.10.0",
     "marked": "^0.3.6",
     "angular-marked": "^1.2.2",
-    "angular-highlightjs": "^0.7.1"
+    "angular-highlightjs": "^0.7.1",
+    "angular-moment": "^1.0.1"
   }
 }

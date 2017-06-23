@@ -1,7 +1,7 @@
-SolderGuideControllers.controller('timerCtrl', ['$rootScope', '$scope','$moment','ionicDatePicker','$interval', timerCtrl]);
+SolderGuideControllers.controller('timerCtrl', ['$rootScope', '$scope', 'moment', 'ionicDatePicker', '$interval', timerCtrl]);
 
 
-function timerCtrl($rootScope, $scope,$moment,ionicDatePicker, $interval) {
+function timerCtrl($rootScope, $scope, moment, ionicDatePicker, $interval) {
 
 
 
@@ -68,17 +68,17 @@ function timerCtrl($rootScope, $scope,$moment,ionicDatePicker, $interval) {
             localStorage.setItem('DMBTimerVal',val);
             datePickerCallback(val);
             console.log("val",val)
-            $scope.secDate=Math.floor($moment($moment().diff($moment(val)))/1000);
-            $scope.monthDate=Math.floor($moment($moment().diff($moment(val)))/1000/60/60/24/30);
-            $scope.weekDate=Math.floor($moment($moment().diff($moment(val)))/1000/60/60/24/7);
-            $scope.dayDate=Math.floor($moment($moment().diff($moment(val)))/1000/60/60/24);
-            $scope.hourDate=Math.floor($moment($moment().diff($moment(val)))/1000/60/60);
-            $scope.monthDateRem=Math.floor($moment(($moment(val).add(1,'year')).diff($moment()))/1000/60/60/24/30);
-            $scope.weekDateRem=Math.floor($moment(($moment(val).add(1,'year')).diff($moment()))/1000/60/60/24/7);
-            $scope.dayDateRem=Math.floor($moment(($moment(val).add(1,'year')).diff($moment()))/1000/60/60/24);
-            $scope.hourDateRem=Math.floor($moment(($moment(val).add(1,'year')).diff($moment()))/1000/60/60);
-            $scope.secDateRem=Math.floor($moment(($moment(val).add(1,'year')).diff($moment()))/1000);
-            $scope.updateProgressbar(Math.floor($moment(0).add(1,'year'))/1000,$scope.secDate)
+            $scope.secDate=Math.floor(moment(moment().diff(moment(val)))/1000);
+            $scope.monthDate=Math.floor(moment(moment().diff(moment(val)))/1000/60/60/24/30);
+            $scope.weekDate=Math.floor(moment(moment().diff(moment(val)))/1000/60/60/24/7);
+            $scope.dayDate=Math.floor(moment(moment().diff(moment(val)))/1000/60/60/24);
+            $scope.hourDate=Math.floor(moment(moment().diff(moment(val)))/1000/60/60);
+            $scope.monthDateRem=Math.floor(moment((moment(val).add(1,'year')).diff(moment()))/1000/60/60/24/30);
+            $scope.weekDateRem=Math.floor(moment((moment(val).add(1,'year')).diff(moment()))/1000/60/60/24/7);
+            $scope.dayDateRem=Math.floor(moment((moment(val).add(1,'year')).diff(moment()))/1000/60/60/24);
+            $scope.hourDateRem=Math.floor(moment((moment(val).add(1,'year')).diff(moment()))/1000/60/60);
+            $scope.secDateRem=Math.floor(moment((moment(val).add(1,'year')).diff(moment()))/1000);
+            $scope.updateProgressbar(Math.floor(moment(0).add(1,'year'))/1000,$scope.secDate)
 
         }
     };
@@ -88,18 +88,19 @@ function timerCtrl($rootScope, $scope,$moment,ionicDatePicker, $interval) {
 
     $scope.init = function () {
         if(localStorage.getItem("DMBTimerVal")){
+            console.log("!!!!!!!!!!!!!!!!!!!!",localStorage.getItem("DMBTimerVal"));
             var date=JSON.parse(localStorage.getItem("DMBTimerVal"));
-            $scope.secDate=$moment($moment().diff($moment(date)))/1000;
-            $scope.monthDate=Math.floor($moment($moment().diff($moment(date)))/1000/60/60/24/30);
-            $scope.weekDate=Math.floor($moment($moment().diff($moment(date)))/1000/60/60/24/7);
-            $scope.dayDate=Math.floor($moment($moment().diff($moment(date)))/1000/60/60/24);
-            $scope.hourDate=Math.floor($moment($moment().diff($moment(date)))/1000/60/60);
-            $scope.monthDateRem=Math.floor($moment(($moment(date).add(1,'year')).diff($moment()))/1000/60/60/24/30);
-            $scope.weekDateRem=Math.floor($moment(($moment(date).add(1,'year')).diff($moment()))/1000/60/60/24/7);
-            $scope.dayDateRem=Math.floor($moment(($moment(date).add(1,'year')).diff($moment()))/1000/60/60/24);
-            $scope.hourDateRem=Math.floor($moment(($moment(date).add(1,'year')).diff($moment()))/1000/60/60);
-            $scope.secDateRem=Math.floor($moment(($moment(date).add(1,'year')).diff($moment()))/1000);
-            $scope.updateProgressbar(Math.floor($moment(0).add(1,'year'))/1000,$scope.secDate)
+            $scope.secDate=moment(moment().diff(moment(date)))/1000;
+            $scope.monthDate=Math.floor(moment(moment().diff(moment(date)))/1000/60/60/24/30);
+            $scope.weekDate=Math.floor(moment(moment().diff(moment(date)))/1000/60/60/24/7);
+            $scope.dayDate=Math.floor(moment(moment().diff(moment(date)))/1000/60/60/24);
+            $scope.hourDate=Math.floor(moment(moment().diff(moment(date)))/1000/60/60);
+            $scope.monthDateRem=Math.floor(moment((moment(date).add(1,'year')).diff(moment()))/1000/60/60/24/30);
+            $scope.weekDateRem=Math.floor(moment((moment(date).add(1,'year')).diff(moment()))/1000/60/60/24/7);
+            $scope.dayDateRem=Math.floor(moment((moment(date).add(1,'year')).diff(moment()))/1000/60/60/24);
+            $scope.hourDateRem=Math.floor(moment((moment(date).add(1,'year')).diff(moment()))/1000/60/60);
+            $scope.secDateRem=Math.floor(moment((moment(date).add(1,'year')).diff(moment()))/1000);
+            $scope.updateProgressbar(Math.floor(moment(0).add(1,'year'))/1000,$scope.secDate)
         }else {
 
             $scope.openDatePicker()

@@ -12,7 +12,7 @@ var SolderGuide = angular.module('SolderGuide', [
   'profiber.directives',
   'rzModule',
   'ionic-datepicker',
-  'angular-momentjs'
+  'angularMoment'
 ]);
 
 

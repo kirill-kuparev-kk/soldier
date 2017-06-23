@@ -6,6 +6,7 @@ function routes($stateProvider, $urlRouterProvider) {
       .state('menu', menu)
       .state('notepad', notepad)
       .state('about', about)
+      .state('prazdniki', prazdniki)
       .state('federlzakon', federlzakon)
       .state('o_statuse_voennosluzhashego', o_statuse_voennosluzhashego)
       .state('o_statuse_voennosluzhashego_chap1', o_statuse_voennosluzhashego_chap1)
@@ -64,6 +65,13 @@ function routes($stateProvider, $urlRouterProvider) {
 
       .state('stroevoy_ustav', stroevoy_ustav)
       .state('stroevoy_ustav_chap1', stroevoy_ustav_chap1)
+      .state('stroevoy_ustav_chap2', stroevoy_ustav_chap2)
+      .state('stroevoy_ustav_chap3', stroevoy_ustav_chap3)
+      .state('stroevoy_ustav_chap4', stroevoy_ustav_chap4)
+      .state('stroevoy_ustav_chap5', stroevoy_ustav_chap5)
+      .state('stroevoy_ustav_chap6', stroevoy_ustav_chap6)
+      .state('stroevoy_ustav_chap7', stroevoy_ustav_chap7)
+      .state('stroevoy_ustav_chap8', stroevoy_ustav_chap8)
       .state('ustav_voennoy_policii', ustav_voennoy_policii)
       .state('ustav_voennoy_policii_chap1', ustav_voennoy_policii_chap1)
       .state('ustav_voennoy_policii_chap2', ustav_voennoy_policii_chap2);
@@ -422,6 +430,42 @@ var stroevoy_ustav_chap1 = {
   cache: false,
   templateUrl: 'pages/ustavi/stroevoy_ustav/chapter1.html'
 };
+var stroevoy_ustav_chap2 = {
+    url: '/stroevoy_ustav_chap2',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter2.html'
+};
+var stroevoy_ustav_chap3 = {
+    url: '/stroevoy_ustav_chap3',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter3.html'
+};
+var stroevoy_ustav_chap4 = {
+    url: '/stroevoy_ustav_chap4',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter4.html'
+};
+var stroevoy_ustav_chap5 = {
+    url: '/stroevoy_ustav_chap5',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter5.html'
+};
+var stroevoy_ustav_chap6 = {
+    url: '/stroevoy_ustav_chap6',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter6.html'
+};
+var stroevoy_ustav_chap7 = {
+    url: '/stroevoy_ustav_chap7',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter7.html'
+};
+var stroevoy_ustav_chap8 = {
+    url: '/stroevoy_ustav_chap8',
+    cache: false,
+    templateUrl: 'pages/ustavi/stroevoy_ustav/chapter8.html'
+};
+
 var ustav_voennoy_policii = {
     url: '/ustav_voennoy_policii',
     cache: false,

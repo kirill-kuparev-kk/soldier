@@ -3,6 +3,9 @@ SolderGuide
 
 
 function MainCtrl($rootScope, $scope, $timeout, $ionicPopover, $ionicModal, $ionicPopup) {
+    $rootScope.Helper = function () {
+        localStorage.clear()
+    };
   $rootScope.modal = undefined;
 
   $rootScope.inputPatterns = {
